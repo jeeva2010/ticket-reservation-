@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Ticket Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Railway Ticket Reservation</h1>
+
+        <!-- Booking Form -->
+        <form id="booking-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="train">Choose Train:</label>
+            <select id="train">
+                <option value="Express">Express</option>
+                <option value="rockfort">rockfort</option>
+                <option value="vandebharat">vandebharat</option>
+            </select>
+
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="seats">Number of Seats:</label>
+            <input type="number" id="seats" min="1" required>
+
+            <button type="submit">Book Ticket</button>
+        </form>
+
+        <!-- Display booked tickets -->
+        <h2>Booking Details:</h2>
+        <ul id="booking-list">
+            <!-- Booked tickets will be listed here -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
